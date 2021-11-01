@@ -38,7 +38,7 @@ const breathingApp = () => {
   const breathingAnimation = setInterval(() => {
     if (breathsLeft === 0) {
       clearInterval(breathingAnimation);
-      instructions.innerText = "Breathing sestion is completed. Click 'Begin' to start another sestion!";
+      instructions.innerText = "Breathing session is completed. Click 'Begin' to start another session!";
       start.classList.remove('button-inactive');
       breathsLeft = numberOfBreaths.value;
       breathsText.innerText = breathsLeft;
